@@ -14,10 +14,9 @@ import {
   UseInterceptors,
 } from '@nestjs/common'
 import { FileInterceptor } from '@nestjs/platform-express'
-
-import { JwtAuthGuard } from '@/auth/jwt-auth.guard'
-import { FileDto } from '@/upload/upload.dto'
-import { UploadService } from '@/upload/upload.service'
+import { JwtAuthGuard } from 'src/auth/jwt-auth.guard'
+import { FileDto } from 'src/upload/upload.dto'
+import { UploadService } from 'src/upload/upload.service'
 
 import { CreateProjectDto } from './dtos/create-project.dto'
 import { UpdateProjectDto } from './dtos/update-project.dto'
