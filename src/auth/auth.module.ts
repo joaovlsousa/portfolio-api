@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common'
 import { JwtModule } from '@nestjs/jwt'
 import { PassportModule } from '@nestjs/passport'
-import { EnvModule } from 'src/env/env.module'
-import { EnvService } from 'src/env/env.service'
 
+import { EnvModule } from '../env/env.module'
+import { EnvService } from '../env/env.service'
 import { AuthController } from './auth.controller'
 import { AuthService } from './auth.service'
 import { JwtStrategy } from './jwt.strategy'

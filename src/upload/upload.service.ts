@@ -3,9 +3,9 @@ import {
   Injectable,
   InternalServerErrorException,
 } from '@nestjs/common'
-import { EnvService } from 'src/env/env.service'
 import { UTApi, UTFile } from 'uploadthing/server'
 
+import { EnvService } from '../env/env.service'
 import { FileDto } from './upload.dto'
 
 @Injectable()
