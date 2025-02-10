@@ -50,7 +50,7 @@ export class AuthService {
     }
 
     return {
-      accesToken: this.jwtService.sign({ sub: githubId }),
+      accessToken: this.jwtService.sign({ sub: githubId }),
     }
   }
 }
