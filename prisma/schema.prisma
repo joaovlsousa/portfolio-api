@@ -13,7 +13,7 @@ model Project {
   name        String
   description String
   pinned      Boolean     @default(false)
-  type        ProjetcType
+  type        ProjectType
 
   imageUrl String? @map("image_url")
   imageId  String? @map("image_id")
@@ -27,7 +27,7 @@ model Project {
   @@map("projects")
 }
 
-enum ProjetcType {
+enum ProjectType {
   FRONTEND
   BACKEND
 }

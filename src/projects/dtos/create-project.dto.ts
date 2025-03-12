@@ -1,11 +1,11 @@
-import { $Enums as PrismaEnums } from '@prisma/client'
 import {
-  IsEnum,
   IsNotEmpty,
   IsOptional,
   IsUrl,
-  MinLength,
+  MinLength
 } from 'class-validator'
+
+type ProjectType = 'FRONTEND' | 'BACKEND'
 
 export class CreateProjectDto {
   @MinLength(2)
@@ -25,6 +25,5 @@ export class CreateProjectDto {
   pinned: boolean | undefined
 
   @IsNotEmpty()
-  @IsEnum(PrismaEnums.ProjetcType)
-  type: PrismaEnums.ProjetcType
+  type: ProjectType
 }
