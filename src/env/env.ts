@@ -11,6 +11,9 @@ export const envSchema = z.object({
 
   CMS_PUBLIC_URL: z.string().url(),
   PORTFOLIO_PUBLIC_URL: z.string().url(),
+  
+  CMS_LOCAL_PUBLIC_URL: z.string().url(),
+  PORTFOLIO_LOCAL_PUBLIC_URL: z.string().url(),
 
   GITHUB_USER_ID: z.coerce.number().int(),
   GITHUB_USERNAME: z.string(),

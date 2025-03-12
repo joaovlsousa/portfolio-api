@@ -11,8 +11,16 @@ async function bootstrap() {
   const cmsPublicUrl = env.get('CMS_PUBLIC_URL')
   const portfolioPublicUrl = env.get('PORTFOLIO_PUBLIC_URL')
 
+  const cmsLocalPublicUrl = env.get('CMS_LOCAL_PUBLIC_URL')
+  const portfolioLocalPublicUrl = env.get('PORTFOLIO_LOCAL_PUBLIC_URL')
+
   app.enableCors({
-    origin: [cmsPublicUrl, portfolioPublicUrl],
+    origin: [
+      cmsPublicUrl,
+      portfolioPublicUrl,
+      cmsLocalPublicUrl,
+      portfolioLocalPublicUrl
+    ],
   })
   app.useGlobalPipes(new ValidationPipe())
 
