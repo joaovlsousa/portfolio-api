@@ -22,8 +22,7 @@
   ],
   "build": {
     "env": {
-      "NODE_PATH": "./src",
-      "PRISMA_GENERATE": "true"
+      "NODE_PATH": "./src"
     }
   }
 }
