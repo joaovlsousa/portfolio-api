@@ -19,5 +19,10 @@
         "OPTIONS"
       ]
     }
-  ]
+  ],
+  "build": {
+    "env": {
+      "NODE_PATH": "./src"
+    }
+  }
 }
