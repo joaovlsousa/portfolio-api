@@ -1,5 +1,5 @@
 -- CreateEnum
-CREATE TYPE "ProjetcType" AS ENUM ('FRONTEND', 'BACKEND');
+CREATE TYPE "ProjectType" AS ENUM ('FRONTEND', 'BACKEND');
 
 -- CreateTable
 CREATE TABLE "projects" (
@@ -7,7 +7,7 @@ CREATE TABLE "projects" (
     "name" TEXT NOT NULL,
     "description" TEXT NOT NULL,
     "pinned" BOOLEAN NOT NULL DEFAULT false,
-    "type" "ProjetcType" NOT NULL,
+    "type" "ProjectType" NOT NULL,
     "image_url" TEXT,
     "image_id" TEXT,
     "github_url" TEXT NOT NULL,
